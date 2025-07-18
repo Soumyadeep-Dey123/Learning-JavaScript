@@ -76,3 +76,16 @@ let { firstName: personFname, lastName, age } = person;
 console.log(lastName, age); // Outputs: John Doe 30
 console.log(personFname); // Outputs: John
 
+// This keyword in objects
+let car = {
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2020,
+    getDetails: function () {
+        return `${this.brand} ${this.model}, ${this.year}`;
+    }
+};
+console.log(car.getDetails()); // Outputs: Toyota Corolla, 2020
+// The this keyword refers to the object itself, allowing access to its properties and methods
+// Objects can also be used to create classes in JavaScript
+// Classes are a blueprint for creating objects with shared properties and methods  

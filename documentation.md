@@ -62,4 +62,10 @@ console.log(person.name); // "New Name" (changed)
 
 > We can use new keyword to create a new object, but it will not create a deep copy. It will still point to the same memory location in the heap. Objects here refer to reference types like objects, arrays, etc.
 
+## Scope [Reference](javascript-files/scope.js)
+- Scope refers to the visibility and lifetime of variables in a program.
+- Anything declared inside a function (or simply '{}') is not accessible outside that function.
+- Variables declared with `var` or just using the variable name are function-scoped, meaning they are accessible throughout the function in which they are declared.
+- Variables declared with `let` and `const` are block-scoped, meaning they are only accessible within the block in which they are declared.
+- In js, we have 3 types of scope: Global, Function, and Block.
 

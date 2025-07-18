@@ -35,3 +35,40 @@ function addIntoCart(var1, var2, ...var3) {
 }
 let cartItems = addIntoCart("apple", "banana", "orange", "grapes");
 console.log(cartItems); // Outputs: [ 'orange', 'grapes' ] (rest parameters collect remaining arguments into an array)
+
+// Can also have nested functions or functions inside loops or conditionals
+// Main thing is that functions are contained in two curly braces '{}'
+
+
+// Arrow functions
+// Smarter way to write functions
+// Syntax: (parameters) => { code to be executed }
+const add = (a, b) => a + b;
+console.log(add(5, 10)); // Outputs: 15
+
+// Implicit return
+const square = x => x * x; // or const square = (x) => (x * x);
+console.log(square(4)); // Outputs: 16
+
+// Immediately Invoked Function Expression (IIFE)
+// A function that runs as soon as it is defined
+(function iife() {
+    // named iife
+    console.log("This function runs immediately!");
+})();
+// Outputs: This function runs immediately!
+//  How?
+// function() { ... } is a function expression
+// The parentheses () at the end invoke the function immediately, like functionName()
+// IIFE can also take parameters
+(function (name) {
+    console.log(`Hello, ${name}!`);
+})("Alice");
+// Outputs: Hello, Alice!
+
+// IIFE must be ended with a semicolon to avoid issues with other code that follows it
+// IIFE can also be run using arrow function syntax
+(() => {
+    console.log("This is an IIFE using arrow function syntax!");
+})();
+// Outputs: This is an IIFE using arrow function syntax!
