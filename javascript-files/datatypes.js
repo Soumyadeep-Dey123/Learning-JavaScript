@@ -82,3 +82,12 @@ console.log(typeof newName); // Outputs: object (because it's an object wrapper 
 // Objects : continued in objects.js
 
 
+// Maps 
+// Maps are collections of unique key-value pairs where keys can be of any datatype
+let myMap = new Map();
+myMap.set("name", "Alice");
+myMap.set(1, "one");
+myMap.set(true, "yes");
+console.log(myMap.get("name")); // Outputs: Alice
+console.log(myMap.get(1)); // Outputs: one
+console.log(myMap.get(true)); // Outputs: yes

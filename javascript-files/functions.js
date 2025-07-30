@@ -49,6 +49,9 @@ console.log(add(5, 10)); // Outputs: 15
 // Implicit return
 const square = x => x * x; // or const square = (x) => (x * x);
 console.log(square(4)); // Outputs: 16
+// When scope is opened with curly braces, you must use return statement
+const multiply = (a, b) => { return a * b; };
+console.log(multiply(3, 4)); // Outputs: 12
 
 // Immediately Invoked Function Expression (IIFE)
 // A function that runs as soon as it is defined

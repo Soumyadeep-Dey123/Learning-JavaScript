@@ -69,3 +69,27 @@ console.log(person.name); // "New Name" (changed)
 - Variables declared with `let` and `const` are block-scoped, meaning they are only accessible within the block in which they are declared.
 - In js, we have 3 types of scope: Global, Function, and Block.
 
+## Truthy and Falsy Values [Reference](javascript-files/truthy-falsy.js)
+- Truthy values are values that evaluate to true in a boolean context.
+- Falsy values are values that evaluate to false in a boolean context.
+- Falsy values in JavaScript include: `false`, `0`, `""` (empty string), `null`, `undefined`, and `NaN`.
+- All other values are considered truthy, including non-empty strings, non-zero numbers, and objects. ("0" is truthy, but 0 is falsy, {},[],functions are truthy)
+
+*Exception :**
+```javascript
+if(Object.keys(emptyObject).length === 0) {
+  console.log("This is an empty object");
+}
+```
+## High Order Array Loops [Reference](javascript-files/advanced-loops.js)
+
+- forof loop: Used to iterate over iterable objects like arrays, strings, etc.
+**Syntax:**
+```javascript
+for (const element of iterable) {
+  // code to execute for each element
+}
+```
+
+- forin loop: Used to iterate over the properties of an object.
+
